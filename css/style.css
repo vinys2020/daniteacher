@@ -1,7 +1,7 @@
 
 :root {
-    --first-color: rgb(255, 178, 178);
-    --first-alpha-color: rgb(209, 84, 35);
+    --first-color: rgb(90, 162, 245);
+    --first-alpha-color: rgb(61, 138, 224);
     --second-color: rgba(0, 0, 0, 0.915);
     --second-alpha-color: rgba(49, 55, 109, 0.562);
     --seconddddddddd-alpha-color: rgba(197, 43, 43, 0.869);
@@ -72,7 +72,7 @@
   }
   
   .dropdown-item:hover {
-    background-color: rgba(233, 110, 110, 0.884); /* Cambia el fondo a negro */
+    background-color: rgba(96, 98, 235, 0.938); /* Cambia el fondo a negro */
     color: white; /* Cambia el color del texto a blanco */
   }
   
@@ -247,64 +247,8 @@
   
   
   
-  .card-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-  .card {
-    position:relative;
-    width: 350px;
-    background: white;
-    border-radius: 20px;
-    padding: 50px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 5px 18px rgba(241, 241, 241, 0.877);
-    border-radius: 20px;
-    gap: 50px;
-    border: 3.5px solid transparent;
-    transition: all 0.3s ease;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.438);
-  }
-  
-  
-  .card:hover {
-      border-color: rgb(253, 2, 253);
-      box-shadow: none;
-      
-  }
-  
-  
-  
-  .card-text::-webkit-scrollbar-thumb {
-    background-color: #999; 
-    border-radius: 3px;
-  }
-  @media (max-width: 767px) {
-    .card-text {
-      overflow-y: hidden; /* Oculta el desplazamiento vertical en dispositivos móviles */
-    }
-  }
-  
-  .card-text p {
-    max-width: 100%; 
-    word-wrap: break-word;
-  }
-  
-  .card h3 {
-    text-align: center;
-  }
-  .card p {
-    color: orange;
-    text-align: left;
-    font-size: 1.2rem;
-  }
+
+
   .swiper-container {
     position: relative;
     margin: 0 auto;
@@ -404,52 +348,10 @@
     vertical-align: middle;
   }
   
+
+
   
   
-  .my-card {
-    position: relative;
-    overflow: hidden;
-    
-  }
-  
-  .my-card .card-img {
-    width: 100%; 
-    height: auto;
-  
-  }
-  
-  .my-card .card-img-overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
-    color: #fff; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.568);
-  }
-  
-  .my-card .card-title {
-    font-size: 1.5rem; 
-    margin-bottom: 10px; 
-    margin-top: 380px;
-  }
-  
-  .my-card .card-text {
-    font-size: 1rem; 
-    margin-bottom: 150px; 
-  }
-  
-  .my-card blockquote {
-    font-style: italic;
-    
-  }
-  
-  .my-card small {
-    color: orange;
-  }
-  
-  
-  /* Ajustes de tipografía en dispositivos móviles */
   @media (max-width: 767px) {
     body {
       font-size: 15px; 
@@ -460,15 +362,46 @@
     }
   
     h2 {
-      font-size: 1.5rem; 
+      font-size: 1rem; 
     }
+  
     h3 {
-      font-size: 1.2rem; 
+      font-size: 0.8rem; 
     }
+  
     h4 {
       font-size: 1rem; 
     }
+  
+    h5 {
+      font-size: 0.7rem;
+    }
+  
+    .container p {
+      font-size: 0.7rem;
+    }
+
+
+  
+
   }
+
+  @media (max-width: 767px) {
+    .image-container {
+        margin: 0px;
+    }
+    .image-container img{
+      height: auto;
+  }
+}
+
+.image-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+  
   
   
   

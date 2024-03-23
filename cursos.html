@@ -74,11 +74,11 @@
   <body style="background-color: black">
     <nav
       class="navbar sticky-top navbar-expand-lg navbar-dark"
-      style="background:#E96E6E;"
+      style="background:rgb(8, 34, 100);"
     >
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img src="img/pruebanavlog.png" alt="logo dani" />
+          <img src="img/speakblue.png" alt="logo dani" />
         </a>
         <button
           class="navbar-toggler border-0"
@@ -237,206 +237,89 @@
       </div>
     </section>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const wordContainer = document.getElementById("wordContainer");
-        const words = [
-          "",
-          "",
-          "Ingles General",
-          "Kids",
-          "Skills",
-          "Ingles Academico",
-        ];
 
-        function animateWords() {
-          let index = 0;
-
-          function updateWord() {
-            const currentWord = words[index];
-            let charIndex = 0;
-
-            function typeEffect() {
-              wordContainer.textContent = currentWord.slice(0, charIndex);
-              charIndex++;
-
-              if (charIndex <= currentWord.length) {
-                setTimeout(typeEffect, 50); // Ajusta la velocidad de escritura
-              } else {
-                setTimeout(() => {
-                  eraseEffect();
-                }, 2000); // Tiempo antes de comenzar a borrar
-              }
-            }
-
-            function eraseEffect() {
-              wordContainer.textContent = currentWord.slice(0, charIndex);
-              charIndex--;
-
-              if (charIndex >= 0) {
-                setTimeout(eraseEffect, 50); // Ajusta la velocidad de borrado
-              } else {
-                index = (index + 1) % words.length;
-                setTimeout(() => {
-                  updateWord();
-                }, 500); // Tiempo antes de comenzar a escribir la siguiente palabra
-              }
-            }
-
-            typeEffect();
-          }
-
-          updateWord();
-        }
-
-        animateWords();
-      });
-    </script>
-
-    <section class="pt-5" style="background-color: white">
-      <div class="container">
-        <section class="row text-white align-items-lg-center mb-0">
-          <article class="col-12 col-lg-5 mb-5 slide-up">
-            <h1 style="color: black"><b>Aprende con nosotros</b></h1>
-            <p class="fs-5 slide-up" style="color: black">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima,
-              consequuntur? Qui perferendis ad sint dolorum hic beatae
-              laboriosam consectetur quibusdam, fugiat modi sunt rerum itaque.
-              Vel reprehenderit id recusandae laboriosam?
-            </p>
-            <button
-            type="submit"
-            class="btn btn-danger col-6 mx-auto d-block mt-4"
-          >
-            Inscribirse Ahora
-          </button> 
-          </article>
-
-          <article class="col-12 col-lg-7 mb-5 mt-5">
-            <div class="image-container">
-              <img
-                class="img-fluid slide-up circle-image"
-                src="img/jovenes.jpg"
-                alt="¿Necesitas un increíble sitio web?"
-                style="border-radius: 15px; margin-bottom: 30px;"
-              />
-            </div>
-          </article>
-
-          <article class="col-12 col-lg-5 order-lg-1 slide-up">
-            <h2 style="margin-bottom: 10px; color: black">
-              <i class="bi bi-backpack2-fill"></i> Cursos para todos los niveles
-            </h2>
-            <div class="word-container-wrapper">
-              <b>
-                <div id="wordContainer" class="word-animation"></div>
-              </b>
-            </div>
-            <p class="fs-5 slide-up" style="color: black">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
-              iste numquam, iusto repudiandae deserunt hic consequatur
-              asperiores harum eius labore ad quis quaerat fugit magni nemo
-              corrupti praesentium animi ullam.
-            </p>
-          </article>
-
-          <article class="col-12 col-lg-7 mt-5" style="margin-bottom: 30px">
-            <img
-              class="img-fluid slide-up"
-              src="img/ninos-estudiando-clase.jpg"
-              alt="Sitios web responsivos"
-              style="border-radius: 15px; width: 90%"
-            />
-          </article>
-        </section>
-      </div>
-    </section>
-
-    <section class="pt-5 pb-5" style="background-color: white">
+    <section class="pt-0 pb-5" style="background-color: white">
       <div class="container">
         <article
-          class="col-12 col-md-12 col-lg-12 d-flex justify-content-center w-100 mb-3 mt-4"
+          class="col-12 col-md-12 col-lg-12 d-flex justify-content-center w-100 mb-3 mt-0"
         >
           <div class="text-center">
             <h1 style="color: rgb(0, 0, 0); margin-top: 70px">
               ¡Comienza a aprender hoy!
             </h1>
 
-            <p
-              class="fs-5"
+            <h4
+              class=""
               style="color: rgb(0, 0, 0); margin-bottom: 50px; margin-top: 10px"
             >
               Domina el idioma <b>Ingles</b> o refuerza tus conocimientos con
               nuestros cursos
-            </p>
+            </h4>
           </div>
         </article>
         
 
-            <div class="container slide-up" style="background-color: rgba(224, 211, 211, 0.651); padding: 20px; border-radius: 20px;">
-                <div class="row">
-
-                    <article class="col-12 col-lg-5 mb-5 mt-5 slide-up">
-                        <h2 style="color: rgba(212, 13, 13, 0.719)"><b>Inglés General</b></h2>
-                        <p class="fs-6 slide-up" style="color: rgb(0, 0, 0)">
-                            Aprende a comunicar tus intereses, tu vida, tus necesidades y mucho más. Este curso es para aquellos que quieren aprender desde cero, o para aquellos que ya tienen conocimientos y quieren perfeccionarse. Tus clases están diseñadas de acuerdo a tu nivel y tus propósitos para aprender el idioma. Contamos con todos los niveles disponibles.
-                        </p>
-                        <hr style="color: black;">
-                        <h3 style="color: rgb(218, 11, 11);">Al finalizar el curso podrás:</h3>
-                        <ul>
-                            <li style="color: black;">
-                                Mantener una conversación en inglés.
-                            </li>
-                            
-                            <li style="margin-top: 10px; color: black;">
-                                Desempeñar funciones básicas como pedir indicaciones, presentarse, hacer compras, etc.</li>
-                            <li style="margin-top: 10px; color: black;">
-                                Mantener una conversación en inglés.</li>
-            
-                        </ul>
-    
-                        <button
-                        type="submit"
-                        class="btn btn-danger col-6 mx-auto d-block mt-4"
-                      >
-                        Inscribirse Ahora
-                      </button>                  
-                    </article>
-            
-                      <article class="col-12 col-lg-7 mb-5 mt-5">
-                        <div class="image-container" style="background-color: rgba(189, 192, 197, 0.61); border-radius: 20px">
-                          <img
-                            class="img-fluid circle-image"
-                            src="img/jovenes.jpg"
-                            alt="¿Necesitas un increíble sitio web?"
-                            style="border-radius: 45px; width: 100%; padding: 20px;"
-                          />
-                        </div>
-                      </article>
-
+        <div class="container slide-up" style="background-color: rgba(224, 211, 211, 0.651); padding: 20px; border-radius: 20px;">
+          <div class="row">
+              <article class="col-12 col-lg-5 mb-0 mt-5 slide-up">
+                  <h1 style="color: rgba(212, 13, 13, 0.719)"><b>Inglés General</b></h1>
+                  <p class="fs-6 slide-up" style="color: rgb(0, 0, 0)">
+                      Aprende a comunicar tus intereses, tu vida, tus necesidades y mucho más. Este curso es para aquellos que quieren aprender desde cero, o para aquellos que ya tienen conocimientos y quieren perfeccionarse. Tus clases están diseñadas de acuerdo a tu nivel y tus propósitos para aprender el idioma. Contamos con todos los niveles disponibles.
+                  </p>
+                  <hr style="color: black;">
+                  <h2 style="color: rgb(218, 11, 11);">Al finalizar el curso podrás:</h2>
+                  <ul>
+                      <li style="color: black;">Mantener una conversación en inglés.</li>
+                      <li style="margin-top: 10px; color: black;">Desempeñar funciones básicas como pedir indicaciones, presentarse, hacer compras, etc.</li>
+                      <li style="margin-top: 10px; color: black;">Mantener una conversación en inglés.</li>
+                  </ul>
+                  <button
+                      type="button"
+                      class="btn btn-danger col-6 mx-auto d-block mt-4"
+                      onclick="window.open('https://api.whatsapp.com/send?phone=5493865214524', '_blank');"
+                  >
+                      Inscribirse Ahora
+                  </button>
+              </article>
+              <article class="col-12 col-lg-7">
+                <div class="image-container">
+                    <img
+                        class="img-fluid circle-image"
+                        src="img/jovenes.jpg"
+                        alt="¿Necesitas un increíble sitio web?"
+                        style="border-radius: 15px; width: 100%;"
+                    />
                 </div>
-            </div>
+            </article>
+            
+            
+          </div>
+      </div>
 
-            <div class="container slide-up" style="background-color: rgba(224, 211, 211, 0.651); padding: 20px; border-radius: 20px; margin-top: 30px;">
+      
+      
+      
+
+            <div class="container slide-up" style="background-color: rgba(224, 211, 211, 0.651); padding: 20px; border-radius: 20px; margin-top: 50px;">
                 <div class="row">
 
-                    <article class="col-12 col-lg-7 mb-5 mt-5">
-                        <div class="image-container" style="background-color: rgba(189, 192, 197, 0.61); border-radius: 20px">
+                    <article class="col-12 col-lg-7">
+                        <div class="image-container">
                           <img
                             class="img-fluid circle-image"
                             src="img/ninos-estudiando-clase.jpg"
                             alt="¿Necesitas un increíble sitio web?"
-                            style="border-radius: 45px; width: 100%; padding: 20px;"
-                          />
+                            style="border-radius: 15px; width: 100%;"
+                            />
                         </div>
                       </article>
 
                     <article class="col-12 col-lg-5 mb-5 mt-5 slide-up">
-                        <h2 style="color: rgba(212, 13, 13, 0.719)"><b>Kids</b></h2>
+                        <h1 style="color: rgba(212, 13, 13, 0.719)"><b>Kids</b></h1>
                         <p class="fs-6 slide-up" style="color: rgb(0, 0, 0)">
                             La infancia es un momento clave para aprender un nuevo idioma, pues es en esta etapa en donde aún estamos desarrollando nuestro lenguaje, formas de comunicación y nuestra visión del mundo. A través del juego y la didáctica                        </p>
                         <hr style="color: black;">
-                        <h3 style="color: rgb(218, 11, 11);">Los niños serán capaces de:</h3>
+                        <h2 style="color: rgb(218, 11, 11);">Los niños serán capaces de:</h2>
                         <ul>
                             <li style="color: black;">
                                 Desenvolverse en oportunidades reales de comunicación en inglés.
@@ -450,11 +333,12 @@
                         </ul>
     
                         <button
-                        type="submit"
+                        type="button"
                         class="btn btn-danger col-6 mx-auto d-block mt-4"
-                      >
+                        onclick="window.open('https://api.whatsapp.com/send?phone=5493865214524', '_blank');"
+                    >
                         Inscribirse Ahora
-                      </button>                  
+                    </button>                 
                     </article>
             
 
@@ -462,16 +346,16 @@
                 </div>
             </div>
 
-            <div class="container slide-up" style="background-color: rgba(224, 211, 211, 0.651); padding: 20px; border-radius: 20px; margin-top: 30px;">
+            <div class="container slide-up" style="background-color: rgba(224, 211, 211, 0.651); padding: 20px; border-radius: 20px; margin-top: 50px;">
                 <div class="row">
 
                     <article class="col-12 col-lg-5 mb-5 mt-5 slide-up">
-                        <h2 style="color: rgba(212, 13, 13, 0.719)"><b>Skills</b></h2>
+                        <h1 style="color: rgba(212, 13, 13, 0.719)"><b>Skills</b></h1>
                         <p class="fs-6 slide-up" style="color: rgb(0, 0, 0)">
-                            Las habilidades de habla, escucha, lectura y escritura son los pilares de la comunicación efectiva en inglés. Según tus intereses
+                            Las habilidades de habla, escucha, lectura y escritura son los pilares de la comunicación efectiva en inglés. Según tus intereses Según tus intereses y objetivos, enfocarte en el desarrollo de estas habilidades te abrirá un mundo de oportunidades y posibilidades.
                         </p>
                         <hr style="color: black;">
-                        <h3 style="color: rgb(218, 11, 11);">Al finalizar el curso podrás:</h3>
+                        <h2 style="color: rgb(218, 11, 11);">Al finalizar el curso podrás:</h2>
                         <ul>
                             <li style="color: black;">
                                 Dominar un área específica.
@@ -485,48 +369,49 @@
                         </ul>
     
                         <button
-                        type="submit"
+                        type="button"
                         class="btn btn-danger col-6 mx-auto d-block mt-4"
-                      >
+                        onclick="window.open('https://api.whatsapp.com/send?phone=5493865214524', '_blank');"
+                    >
                         Inscribirse Ahora
-                      </button>                  
+                    </button>                  
                     </article>
             
-                      <article class="col-12 col-lg-7 mb-5 mt-5">
+                      <article class="col-12 col-lg-7">
                         <div class="image-container" style="background-color: rgba(189, 192, 197, 0.61); border-radius: 20px ">
                           <img
                             class="img-fluid circle-image"
                             src="img/cursos-de-inglés-para-empresas.jpg"
                             alt="¿Necesitas un increíble sitio web?"
-                            style="border-radius: 45px; width: 100%; padding: 20px;"
-                          />
+                            style="border-radius: 15px; width: 100%;"
+                            />
                         </div>
                       </article>
 
                 </div>
             </div>
 
-            <div class="container slide-up" style="background-color: rgba(224, 211, 211, 0.651); padding: 20px; border-radius: 20px; margin-top: 30px; margin-top: 30px;">
+            <div class="container slide-up" style="background-color: rgba(224, 211, 211, 0.651); padding: 20px; border-radius: 20px; margin-top: 30px; margin-top: 50px;">
                 <div class="row">
 
-                    <article class="col-12 col-lg-7 mb-5 mt-5">
+                    <article class="col-12 col-lg-7">
                         <div class="image-container" style="background-color: rgba(189, 192, 197, 0.61); border-radius: 20px">
                           <img
                             class="img-fluid circle-image"
                             src="img/academy.jpg"
                             alt="¿Necesitas un increíble sitio web?"
-                            style="border-radius: 45px; width: 100%; padding: 20px;"
+                            style="border-radius: 15px; width: 100%;"
                           />
                         </div>
                       </article>
 
                     <article class="col-12 col-lg-5 mb-5 mt-5 slide-up">
-                        <h2 style="color: rgba(212, 13, 13, 0.719)"><b>Ingles Academico</b></h2>
+                        <h1 style="color: rgba(212, 13, 13, 0.719)"><b>Inglés Academico</b></h1>
                         <p class="fs-6 slide-up" style="color: rgb(0, 0, 0)">
                             Si estás estudiando la lengua inglesa en el ámbito pedagógico, este es el curso para vos. Con clases orientadas a la lingüística, literatura inglesa, lengua inglesa y didáctica del inglés
                         </p>
                         <hr style="color: black;">
-                        <h3 style="color: rgb(218, 11, 11);">Al finalizar el curso podrás:</h3>
+                        <h2 style="color: rgb(218, 11, 11);">Al finalizar el curso podrás:</h2>
                         <ul>
                             <li style="color: black;">
                                 Afianzar tus habilidades para poder aprender y enseñar el idioma.
@@ -540,7 +425,7 @@
                         </ul>
                         <hr>
 
-                        <h4 style="color: rgb(218, 11, 11);">Requisitos previos:</h4>
+                        <h2 style="color: rgb(218, 11, 11);">Requisitos previos:</h2>
                         <ul>
                             <li style="color: black;">
                                 Necesitas contar con un nivel de inglés intermedio o avanzado para Inscribirse en este curso.
@@ -550,11 +435,12 @@
 
     
                         <button
-                        type="submit"
+                        type="button"
                         class="btn btn-danger col-6 mx-auto d-block mt-4"
-                      >
+                        onclick="window.open('https://api.whatsapp.com/send?phone=5493865214524', '_blank');"
+                    >
                         Inscribirse Ahora
-                      </button>                  
+                    </button>                
                     </article>
             
 
@@ -563,12 +449,6 @@
             </div>
 
 
-            
-
-
-
-
-   
 
         </section>
       </div>
@@ -586,7 +466,7 @@
       ></a>
     </button>
 
-    <footer class="p-3" style="background-color: rgb(233, 110, 110)">
+    <footer class="p-3" style="background-color: rgb(8, 34, 100);">
       <div class="container text-center">
         <nav class="d-flex justify-content-evenly">
           <a href="https://facebook.com" target="_blank"
@@ -620,7 +500,7 @@
         </article>
 
         <small class="text-white">
-          &copy; 2024 Hecho
+          &copy; 2024 Hecho por Daniela Almaraz - English Teacher
           <a
             href="https://www.instagram.com/danialmaraz_/"
             target="_blank"
