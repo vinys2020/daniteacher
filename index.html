@@ -12,7 +12,56 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css"/>
-  <link rel="icon" href="img/speak.png" />
+  <link rel="icon" href="img/diagnostico-removebg-preview.png" />
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const wordContainer = document.getElementById('wordContainer');
+      const words = ['', 'Inglés General', 'Kids', 'Skills', 'Inglés Academico',];
+
+      function animateWords() {
+        let index = 0;
+
+        function updateWord() {
+          const currentWord = words[index];
+          let charIndex = 0;
+
+          function typeEffect() {
+            wordContainer.textContent = currentWord.slice(0, charIndex);
+            charIndex++;
+
+            if (charIndex <= currentWord.length) {
+              setTimeout(typeEffect, 50); // Ajusta la velocidad de escritura
+            } else {
+              setTimeout(() => {
+                eraseEffect();
+              }, 2000); // Tiempo antes de comenzar a borrar
+            }
+          }
+
+          function eraseEffect() {
+            wordContainer.textContent = currentWord.slice(0, charIndex);
+            charIndex--;
+
+            if (charIndex >= 0) {
+              setTimeout(eraseEffect, 50); // Ajusta la velocidad de borrado
+            } else {
+              index = (index + 1) % words.length;
+              setTimeout(() => {
+                updateWord();
+              }, 500); // Tiempo antes de comenzar a escribir la siguiente palabra
+            }
+          }
+
+          typeEffect();
+        }
+
+        updateWord();
+      }
+
+      animateWords();
+    });   
+  </script>
 
   <style>
     .word-container-wrapper {
@@ -73,7 +122,7 @@
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgb(8, 34, 100);">
     <div class="container">
       <a class="navbar-brand" href="index.html">
-        <img src="img/speakblue.png" alt="logo dani" />
+        <img src="img/logofinalmisnav.png" alt="logo dani" />
       </a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -85,21 +134,11 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Estudiantes
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="sitios.html#single-page">Producciones</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="sitios.html#single-pages">Feedback</a>
-              </li>
-            </ul>
-          </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="cursos.html">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="inscribirse.html">Consultá</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -175,22 +214,33 @@
 
       <section class="row text-white align-items-lg-center mb-0">
 
-        <article class="col-12 col-lg-5 mb-5 slide-up">
+        <article class="col-12 col-lg-5 slide-up">
 
           <h1 style="color: black;"><b>About this site</b> <i class="bi bi-chat-square-text"></i></h1>
           <p class=" fs-5 slide-up" style="color: black;">
             ¡Welcome! Este espacio refleja mi pasión y experiencia como profesora de inglés. Explora mi trayectoria profesional asi como tambien mis cursos diseñados para mejorar tus habilidades lingüísticas y ampliar tus horizontes. Además, podrás apreciar proyectos inspiradores de estudiantes. ¡Anímate a disfrutar aprendiendo!
           </p>
 
+          <button
+          type="button"
+          class="btn btn-success col-6 mx-auto d-block mt-5"
+          onclick="window.location.href = 'cursos.html';"
+        >
+          Ver todos los cursos
+        </button>
+
         </article>
 
 
-        <article class="col-12 col-lg-7 mb-5 slide-up">
+        <article class="col-12 col-lg-7 slide-up">
           <div class="image-container">
-            <img class="img-fluid" src="img/logoindexpagina.png" alt="¿Necesitas un increíble sitio web?"
+            <img class="img-fluid" src="img/logomissdani.png" alt="¿Necesitas un increíble sitio web?"
               style="width: 100%;" />
           </div>
         </article>
+        
+
+
 
       </section>
 
@@ -198,139 +248,21 @@
 
   </section>
 
-  <section class="pt-5" style="background: linear-gradient(to bottom, rgb(165, 103, 216), #ec667e, #f591cb);">
-
-    <div class="container">
-      <section class="row text-white align-items-lg-center ">
-
-        <article class="col-12 text-center mb-5">
-
-          <h1>Mi experiencia Laboral</h1>
-          <h3>+ 5 años enseñando ingles</h3>
-
-        </article>
-
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            const wordContainer = document.getElementById('wordContainer');
-            const words = ['', 'Inglés General', 'Kids', 'Skills', 'Inglés Academico',];
-
-            function animateWords() {
-              let index = 0;
-
-              function updateWord() {
-                const currentWord = words[index];
-                let charIndex = 0;
-
-                function typeEffect() {
-                  wordContainer.textContent = currentWord.slice(0, charIndex);
-                  charIndex++;
-
-                  if (charIndex <= currentWord.length) {
-                    setTimeout(typeEffect, 50); // Ajusta la velocidad de escritura
-                  } else {
-                    setTimeout(() => {
-                      eraseEffect();
-                    }, 2000); // Tiempo antes de comenzar a borrar
-                  }
-                }
-
-                function eraseEffect() {
-                  wordContainer.textContent = currentWord.slice(0, charIndex);
-                  charIndex--;
-
-                  if (charIndex >= 0) {
-                    setTimeout(eraseEffect, 50); // Ajusta la velocidad de borrado
-                  } else {
-                    index = (index + 1) % words.length;
-                    setTimeout(() => {
-                      updateWord();
-                    }, 500); // Tiempo antes de comenzar a escribir la siguiente palabra
-                  }
-                }
-
-                typeEffect();
-              }
-
-              updateWord();
-            }
-
-            animateWords();
-          });   
-        </script>
-
-        <div class="container" style="margin-bottom: 100px;">
-          <div class="row">
-            <div class="col-md-6 offset-md-3">
-              <div class="timeline">
-                <div class="event">
-                  <div class="event-content text-end slide-up">
-                    <h3 style="width: 100%; text-align: center;">Instituto Oxfort <i class="bi bi-briefcase-fill"></i></h3>
-                    <h5 style="background-color: rgb(55, 55, 66); border-radius: 15px; width: autopx;" class="text-center">2014 - 2020</h5>
-                    <p style="width: 100%; text-align: center;">pequeño texto que contenga no mas de esta cantidad de caracteres</p>
-                  </div>
-                  <div class="event-content text-end">
-                  </div>
-                </div>
-                <div class="event">
-                  <div class="event-content text-start">
-
-                  </div>
-                  <div class="event-content text-end slide-up">
-                    <h3 style="width: 100%; text-align: center;"><i class="bi bi-briefcase-fill"></i> Instituto Oxfort</i></h3>
-                    <h5 style="background-color: rgb(55, 55, 66); border-radius: 15px; width: autopx;" class="text-center">2014 - 2020</h5>
-                    <p style="width: 100%; text-align: center;">pequeño texto que contenga no mas de esta cantidad de caracteres</p>
-                  </div>
-
-                </div>
-
-                <div class="event">
-                  <div class="event-content text-end slide-up">
-                    <h3 style="width: 100%; text-align: center;">Instituto Oxfort <i class="bi bi-briefcase-fill"></i></h3>
-                    <h5 style="background-color: rgb(55, 55, 66); border-radius: 15px; width: autopx;" class="text-center">2014 - 2020</h5>
-                    <p style="width: 100%; text-align: center;">pequeño texto que contenga no mas de esta cantidad de caracteres</p>
-                  </div>
-                  <div class="event-content text-end">
-                  </div>
-                </div>
-
-                <div class="event">
-                  <div class="event-content text-start">
-
-                  </div>
-                  <div class="event-content text-end slide-up">
-                    <h3 style="width: 100%; text-align: center;"><i class="bi bi-briefcase-fill"></i> Instituto Oxfort</h3>
-                    <h5 style="background-color: rgb(55, 55, 66); border-radius: 15px; width: autopx;" class="text-center">2014 - 2020</h5>
-                    <p style="width: 100%; text-align: center;">pequeño texto que contenga no mas de esta cantidad de caracteres</p>
-                  </div>
-
-                </div>
-                <!-- Agrega más eventos según sea necesario -->
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-
-  </section>
-
-
-  <section class="pt-5 pb-5" style="background-color: white">
+  <section class="pb-5" style="background-color: white">
     <div class="container">
       <section class="row text-white align-items-lg-center mb-0">
         <article class="col-12 col-lg-5 mb-5 slide-up">
-          <h1 style="color: black"><b>Aprende con nosotros</b></h1>
+          <h1 style="color: black"><b>Aprende Conmigo</b></h1>
           <p class="fs-5 slide-up" style="color: black">
             En nuestro espacio de enseñanza personalizada, te brindo las herramientas y el apoyo necesarios para que alcances tus metas lingüísticas. Con un enfoque centrado en ti, te invito a explorar, practicar y mejorar tus habilidades en inglés          </p>
             <button
             type="button"
             class="btn btn-danger col-6 mx-auto d-block mt-4"
-            onclick="window.open('https://api.whatsapp.com/send?phone=5493865214524', '_blank');"
-        >
+            onclick="window.location.href = 'inscribirse.html';"
+          >
             Inscribirse Ahora
-        </button>
+          </button>
+          
         
         
         </article>
@@ -347,7 +279,7 @@
         </article>
 
         <article class="col-12 col-lg-5 order-lg-1 slide-up">
-          <h1 style="margin-bottom: 10px; color: black">
+          <h1 style=" color: black">
             <i class="bi bi-backpack2-fill"></i> Para todos los niveles
           </h1>
           <div class="word-container-wrapper">

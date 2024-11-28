@@ -351,7 +351,6 @@
 
 
   
-  
   @media (max-width: 767px) {
     body {
       font-size: 15px; 
@@ -380,10 +379,10 @@
     .container p {
       font-size: 0.7rem;
     }
-
-
   
-
+    #formulariodani {
+      margin-top: 0; /* Eliminamos el margen superior en pantallas pequeñas */
+    }
   }
 
   @media (max-width: 767px) {
