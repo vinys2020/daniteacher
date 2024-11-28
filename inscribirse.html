@@ -11,10 +11,11 @@
       crossorigin="anonymous"
     />
     <script type="text/javascript"
-     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
     <script type="text/javascript">
-     emailjs.init('lO8HCYln-rXEwoAgm')
+    emailjs.init('lO8HCYln-rXEwoAgm')
     </script>
     <link
       rel="stylesheet"
@@ -251,16 +252,38 @@
                   <button type="submit" id="button" class="btn btn-lg btn-outline-dark">Enviar</button>
               </div>
             </form>
-    
-            <script type="text/javascript"
-               src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-            </script>
-    
+
             <script type="text/javascript">
-               emailjs.init('lO8HCYln-rXEwoAgm')
-            </script>
+                // Inicialización de EmailJS con tu usuario
+                emailjs.init('lO8HCYln-rXEwoAgm');
+              
+                // Función para enviar el correo
+                document.getElementById('button').addEventListener('click', function(event) {
+                  event.preventDefault(); // Evita el comportamiento por defecto del formulario
+              
+                  const btn = document.getElementById('button');
+                  btn.textContent = 'Enviando...';  // Cambia el texto del botón mientras se envía el correo
+              
+                  // Identificadores del servicio y la plantilla de EmailJS
+                  const serviceID = 'default_service';
+                  const templateID = 'template_nicnhdf';
+              
+                  // Enviar el formulario a través de EmailJS
+                  emailjs.sendForm(serviceID, templateID, document.getElementById('form'))
+                    .then(() => {
+                      btn.textContent = 'Enviar';  // Vuelve al texto original del botón después de enviar
+                      alert('¡Correo enviado correctamente!');
+                    })
+                    .catch((err) => {
+                      btn.textContent = 'Enviar';  // Vuelve al texto original del botón si ocurre un error
+                      alert('Ocurrió un error: ' + JSON.stringify(err));
+                    });
+                });
+              </script>
     
           </article>
+
+
           
         </section>
     </div>
