@@ -228,15 +228,15 @@ document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Enviando mensaje...';
+   btn.value = 'Sending...';
 
-   const serviceID = 'service_zyvbflr';
+   const serviceID = 'default_zyvbflr';
    const templateID = 'template_nicnhdf';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Mensaje enviado correctamente';
-      alert('Mensaje Enviado!');
+      btn.value = 'Send Email';
+      alert('Sent!');
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
