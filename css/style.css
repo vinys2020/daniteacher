@@ -244,7 +244,23 @@
     border: 1px solid white; /* Añade el borde blanco al hacer hover */
   }
   
-  
+  #foto-zoom-container {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+/* Estilo para la imagen */
+  #foto-zoom {
+    transition: transform 0.3s ease; /* Transición suave para el zoom */
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    height: auto;
+  }
+
+/* Efecto de zoom al pasar el mouse */
+  #foto-zoom-container:hover #foto-zoom {
+    transform: scale(1.3); /* Ajusta el nivel de zoom */
+  }
   
   
 
@@ -383,24 +399,71 @@
   }
 
   @media (max-width: 767px) {
-    .image-container {
-        margin: 0px;
-    }
+
     .image-container img{
-      height: auto;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      height: 350px;
+      margin-bottom: 0px;
+
   }
 }
 
 .image-container {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+}
+.image-container1 {
+  margin-top: 50px;
+  border-radius: 15px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 30px;
+}
+
+@media (max-width: 767px) {
+
+  .image-especial img{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 350px;
+}
+}
+
+.image-especial {
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@media (max-width: 767px) {
+
+  .image-container1 img{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 320px;
+    padding: 0px;
+    margin-top: -40px;
+
+}
+}
+
+.image-general {
+  border-radius: 15px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@media (max-width: 767px) {
+
+  .image-general img{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 350px;
+}
 }
 
 
-  
-  
-  
-  
   
   
   @media (max-width: 767px) {
@@ -499,3 +562,4 @@
   .event {
     flex-wrap: wrap;
   }
+

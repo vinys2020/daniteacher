@@ -80,7 +80,7 @@
 
   <body style="background-color: rgb(255, 255, 255)">
 
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgb(8, 34, 100);">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgb(8, 34, 100);" id="myNavbar">
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <img src="img/logofinalmisnav.png" alt="logo dani" />
@@ -112,95 +112,40 @@
       </nav>
 
     <section class="pt-0 bg-black">
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">
-                Informacion de Contacto
-              </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Informacion de Contacto</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <div class="container">
                 <div class="row">
-                  <div class="col-md-12 text-center">
-                    <img
-                      src="img/danifotolista.png"
-                      alt="Imagen del contacto"
-                      class="img-fluid"
-                      style="border-radius: 10px; width: auto; height: auto"
-                    />
+                  <div class="col-md-12 text-center" id="foto-zoom-container">
+                    <img id="foto-zoom" src="img/danifotolista.png" alt="Imagen del contacto" class="img-fluid"
+                      style="border-radius: 10px; max-width: 550px; height: auto; object-fit: cover;">
                   </div>
-                  <div class="col-md-12 text-center mt-3">
-                    <h2>Daniela Almaraz</h2>
-                    <p><b>English Teacher</b></p>
-
-                    <p>
-                      Correo electrónico:
-                      <a href="mailto:faculez07@gmail.com" style="color: blue"
-                        >dani@gmail.com</a
-                      >
+                  <div class="col-md-12 text-center">
+  
+                    <h2 class="fs-1">Daniela Almaraz</h2>
+                    <p class="fs-3"><b>English Teacher</b></p>
+  
+  
+                    <p class="fs-5">email : 
+                      <a href="#" style="color: blue; text-decoration: none; font-size: 1.1rem;">dany.almaraz14@gmail.com</a>
                     </p>
-                    <p>
-                      WhatsApp:
-                      <a
-                        href="https://wa.me/5493865214524"
-                        target="_blank"
-                        style="color: green"
-                        >+54 9 3865 21-4524</a
-                      >
-                    </p>
-
-                    <div class="social-media mt-3">
-                      <a
-                        href="https://www.facebook.com/"
-                        target="_blank"
-                        class="btn btn-outline-primary"
-                      >
-                        <i class="fab fa-facebook"></i> Facebook
-                      </a>
-                      <a
-                        href="https://twitter.com/"
-                        target="_blank"
-                        class="btn btn-outline-info"
-                      >
-                        <i class="fab fa-twitter"></i> Twitter
-                      </a>
-                      <a
-                        href="https://www.instagram.com/danialmaraz_/"
-                        target="_blank"
-                        class="btn btn-outline-danger"
-                      >
-                        <i class="fab fa-instagram"></i> Instagram
-                      </a>
-                    </div>
+                    
+                    <p class="fs-5">WhatsApp: <a href="https://wa.me/5493865214524" target="_blank" style="color: green;">+54 9 3865
+                        21-4524</a></p>
+  
                   </div>
                 </div>
               </div>
+  
             </div>
             <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Cerrar
-              </button>
-              <button type="button" class="btn btn-secondary">
-                <a href="comencemos.html">Enviar mensaje</a>
-              </button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
@@ -302,50 +247,66 @@
       ></a>
     </button>
 
-    <footer class="p-3" style="background-color: rgb(8, 34, 100);">
+    <footer class="p-3" style="background-color: rgb(59, 8, 100);">
       <div class="container text-center">
-        <nav class="d-flex justify-content-evenly">
-          <a href="https://facebook.com" target="_blank"
-            ><i class="bi bi-facebook fs-3"></i
-          ></a>
-          <a href="https://twitter.com" target="_blank"
-            ><i class="bi bi-twitter fs-3"></i
-          ></a>
-          <a href="https://github.com" target="_blank"
-            ><i class="bi bi-github fs-3"></i
-          ></a>
-          <a href="https://youtube.com" target="_blank"
-            ><i class="bi bi-youtube fs-3"></i
-          ></a>
-          <a href="https://www.instagram.com/danialmaraz_/" target="_blank"
-            ><i class="bi bi-instagram fs-3"></i
-          ></a>
-          <a href="https://m.me/user" target="_blank"
-            ><i class="bi bi-messenger fs-3"></i
-          ></a>
-          <a
-            href="https://api.whatsapp.com/send?phone=5215512345678"
-            target="_blank"
-            ><i class="bi bi-whatsapp fs-3"></i
-          ></a>
+        <nav class="d-flex justify-content-evenly mb-3">
+          <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
+          <a href="https://www.instagram.com/danialmaraz_/" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
+          <a href="https://m.me/user" target="_blank"><i class="bi bi-messenger fs-3"></i></a>
+          <a href="#" target="_blank"><i class="bi bi-book fs-3"></i></a>
+          <a href="#" target="_blank"><i class="bi bi-linkedin fs-3"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=5215512345678" target="_blank"><i
+              class="bi bi-whatsapp fs-3"></i></a>
         </nav>
-        <article
-          class="col-12 col-md-12 col-lg-12 d-flex justify-content-center"
-        >
-          <br />
-        </article>
-
+  
+  
         <small class="text-white">
-          &copy; 2024 Hecho por Daniela Almaraz - English Teacher
-          <a
-            href="https://www.instagram.com/danialmaraz_/"
-            target="_blank"
-            class="text-info"
-            >Cuenta personal</a
-          >.
+          &copy; 2024 Made by Daniela Almaraz - English Teacher
+          <a href="https://www.instagram.com/danialmaraz_/" target="_blank" class="text-info">Cuenta personal</a>.
         </small>
       </div>
+  
     </footer>
+
+    <script>
+      const navbar = document.getElementById("myNavbar");
+      let lastScrollY = window.scrollY;
+      let accumulatedScrollUp = 0; // Para acumular los píxeles de desplazamiento hacia arriba
+      let accumulatedScrollDown = 0; // Para acumular los píxeles de desplazamiento hacia abajo
+      const navbarHeight = 110; // Ajusta este valor según la altura de tu navbar
+      const thresholdUp = 900; // Píxeles necesarios para mostrar la navbar al subir
+      const thresholdDown = 200; // Píxeles necesarios para ocultar la navbar al bajar
+    
+      navbar.style.transition = "top 0.4s ease-in-out";
+    
+      // Detectar desplazamiento con la rueda del ratón
+      window.addEventListener("wheel", function (event) {
+        const currentScrollY = window.scrollY;
+    
+        if (event.deltaY > 0) {
+          // Desplazamiento hacia abajo
+          accumulatedScrollUp = 0; // Reinicia el contador de desplazamiento hacia arriba
+          accumulatedScrollDown += currentScrollY - lastScrollY;
+    
+          if (accumulatedScrollDown >= thresholdDown) {
+            navbar.style.top = `-${navbarHeight}px`; // Esconde la barra de navegación
+            accumulatedScrollDown = 0; // Reinicia el contador de desplazamiento hacia abajo
+          }
+        } else {
+          // Desplazamiento hacia arriba
+          accumulatedScrollDown = 0; // Reinicia el contador de desplazamiento hacia abajo
+          accumulatedScrollUp += lastScrollY - currentScrollY;
+    
+          if (accumulatedScrollUp >= thresholdUp) {
+            navbar.style.top = "0"; // Muestra la barra de navegación
+            accumulatedScrollUp = 0; // Reinicia el contador de desplazamiento hacia arriba
+          }
+        }
+    
+        // Actualiza la posición del scroll para la siguiente comparación
+        lastScrollY = currentScrollY;
+      });
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

@@ -17,7 +17,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const wordContainer = document.getElementById('wordContainer');
-      const words = ['', 'Inglés General', 'Kids', 'Skills', 'Inglés Academico',];
+      const words = ['','', 'Inglés General', 'Kids', 'Skills', 'Inglés Academico',];
 
       function animateWords() {
         let index = 0;
@@ -119,7 +119,7 @@
 <body style="background-color: black;">
 
 
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgb(8, 34, 100);">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgb(8, 34, 100);" id="myNavbar">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="img/logofinalmisnav.png" alt="logo dani" />
@@ -162,35 +162,23 @@
           <div class="modal-body">
             <div class="container">
               <div class="row">
+                <div class="col-md-12 text-center" id="foto-zoom-container">
+                  <img id="foto-zoom" src="img/danifotolista.png" alt="Imagen del contacto" class="img-fluid"
+                    style="border-radius: 10px; max-width: 550px; height: auto; object-fit: cover;">
+                </div>
                 <div class="col-md-12 text-center">
 
-                  <img src="img/danifotolista.png" alt="Imagen del contacto" class="img-fluid"
-                    style=" border-radius: 10px; width: auto; height: auto;">
-                </div>
-                <div class="col-md-12 text-center mt-3">
-
-                  <h2>Daniela Almaraz</h2>
-                  <p><b>English Teacher</b></p>
+                  <h2 class="fs-1">Daniela Almaraz</h2>
+                  <p class="fs-3"><b>English Teacher</b></p>
 
 
-                  <p>Correo electrónico: <a href="mailto:faculez07@gmail.com" style="color: blue;">dani@gmail.com</a>
+                  <p class="fs-5">email : 
+                    <a href="#" style="color: blue; text-decoration: none; font-size: 1.1rem;">dany.almaraz14@gmail.com</a>
                   </p>
-                  <p>WhatsApp: <a href="https://wa.me/5493865214524" target="_blank" style="color: green;">+54 9 3865
+                  
+                  <p class="fs-5">WhatsApp: <a href="https://wa.me/5493865214524" target="_blank" style="color: green;">+54 9 3865
                       21-4524</a></p>
 
-
-                  <div class="social-media mt-3">
-                    <a href="https://www.facebook.com/" target="_blank" class="btn btn-outline-primary">
-                      <i class="fab fa-facebook"></i> Facebook
-                    </a>
-                    <a href="https://twitter.com/" target="_blank" class="btn btn-outline-info">
-                      <i class="fab fa-twitter"></i> Twitter
-                    </a>
-                    <a href="https://www.instagram.com/danialmaraz_/" target="_blank" class="btn btn-outline-danger">
-                      <i class="fab fa-instagram"></i> Instagram
-                    </a>
-
-                  </div>
                 </div>
               </div>
             </div>
@@ -198,7 +186,6 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-secondary"><a href="comencemos.html">Enviar mensaje</a></button>
           </div>
         </div>
       </div>
@@ -225,9 +212,10 @@
           type="button"
           class="btn btn-success col-6 mx-auto d-block mt-5"
           onclick="window.location.href = 'cursos.html';"
-        >
-          Ver todos los cursos
-        </button>
+          class="slide-up"
+          >
+            Ver todos los cursos
+          </button>
 
         </article>
 
@@ -251,7 +239,7 @@
   <section class="pb-5" style="background-color: white">
     <div class="container">
       <section class="row text-white align-items-lg-center mb-0">
-        <article class="col-12 col-lg-5 mb-5 slide-up">
+        <article class="col-12 col-lg-5 slide-up">
           <h1 style="color: black"><b>Aprende Conmigo</b></h1>
           <p class="fs-5 slide-up" style="color: black">
             En nuestro espacio de enseñanza personalizada, te brindo las herramientas y el apoyo necesarios para que alcances tus metas lingüísticas. Con un enfoque centrado en ti, te invito a explorar, practicar y mejorar tus habilidades en inglés          </p>
@@ -259,21 +247,21 @@
             type="button"
             class="btn btn-primary col-6 mx-auto d-block mt-4"
             onclick="window.location.href = 'inscribirse.html';"
-          >
+            class="slide-up"
+
+            >
             Consultá Ahora
-          </button>
-          
-        
-        
+            </button>
+ 
         </article>
 
-        <article class="col-12 col-lg-7 mb-5 mt-5">
+        <article class="col-12 col-lg-7  mt-5">
           <div class="image-container">
             <img
               class="img-fluid slide-up circle-image"
               src="img/jovenes.jpg"
               alt="¿Necesitas un increíble sitio web?"
-              style="border-radius: 15px; margin-bottom: 30px;"
+              style="border-radius: 15px; margin-bottom: 100px;"
             />
           </div>
         </article>
@@ -294,18 +282,19 @@
           type="button"
           class="btn btn-danger col-6 mx-auto d-block mt-4"
           onclick="window.location.href = 'cursos.html';"
-      >
-          Ver todos los cursos
-      </button>
+          class="slide-up"
+          >
+            Ver todos los cursos
+          </button>
          
         </article>
 
-        <article class="col-12 col-lg-7 mt-5" style="margin-bottom: 30px">
+        <article class="col-12 col-lg-7 mt-5" style="margin-bottom: 120px" id="niños">
           <img
             class="img-fluid slide-up"
             src="img/ninos-estudiando-clase.jpg"
             alt="Sitios web responsivos"
-            style="border-radius: 15px; width: 90%"
+            style="border-radius: 15px; width: 100%;"
           />
         </article>
       </section>
@@ -329,33 +318,69 @@
 
   <footer class="p-3" style="background-color: rgb(59, 8, 100);">
     <div class="container text-center">
-      <nav class="d-flex justify-content-evenly">
+      <nav class="d-flex justify-content-evenly mb-3">
         <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a>
-        <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter fs-3"></i></a>
-        <a href="https://github.com" target="_blank"><i class="bi bi-github fs-3"></i></a>
-        <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube fs-3"></i></a>
         <a href="https://www.instagram.com/danialmaraz_/" target="_blank"><i class="bi bi-instagram fs-3"></i></a>
         <a href="https://m.me/user" target="_blank"><i class="bi bi-messenger fs-3"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-book fs-3"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-linkedin fs-3"></i></a>
         <a href="https://api.whatsapp.com/send?phone=5215512345678" target="_blank"><i
             class="bi bi-whatsapp fs-3"></i></a>
       </nav>
-      <article class="col-12 col-md-12 col-lg-12 d-flex justify-content-center">
-        <br>
-      </article>
+
 
       <small class="text-white">
-        &copy; 2024 Hecho por Daniela Almaraz - English Teacher
+        &copy; 2024 Made by Daniela Almaraz - English Teacher
         <a href="https://www.instagram.com/danialmaraz_/" target="_blank" class="text-info">Cuenta personal</a>.
       </small>
     </div>
 
   </footer>
 
+  <script>
+    const navbar = document.getElementById("myNavbar");
+    let lastScrollY = window.scrollY;
+    let accumulatedScrollUp = 0; // Para acumular los píxeles de desplazamiento hacia arriba
+    let accumulatedScrollDown = 0; // Para acumular los píxeles de desplazamiento hacia abajo
+    const navbarHeight = 110; // Ajusta este valor según la altura de tu navbar
+    const thresholdUp = 900; // Píxeles necesarios para mostrar la navbar al subir
+    const thresholdDown = 200; // Píxeles necesarios para ocultar la navbar al bajar
+  
+    navbar.style.transition = "top 0.4s ease-in-out";
+  
+    // Detectar desplazamiento con la rueda del ratón
+    window.addEventListener("wheel", function (event) {
+      const currentScrollY = window.scrollY;
+  
+      if (event.deltaY > 0) {
+        // Desplazamiento hacia abajo
+        accumulatedScrollUp = 0; // Reinicia el contador de desplazamiento hacia arriba
+        accumulatedScrollDown += currentScrollY - lastScrollY;
+  
+        if (accumulatedScrollDown >= thresholdDown) {
+          navbar.style.top = `-${navbarHeight}px`; // Esconde la barra de navegación
+          accumulatedScrollDown = 0; // Reinicia el contador de desplazamiento hacia abajo
+        }
+      } else {
+        // Desplazamiento hacia arriba
+        accumulatedScrollDown = 0; // Reinicia el contador de desplazamiento hacia abajo
+        accumulatedScrollUp += lastScrollY - currentScrollY;
+  
+        if (accumulatedScrollUp >= thresholdUp) {
+          navbar.style.top = "0"; // Muestra la barra de navegación
+          accumulatedScrollUp = 0; // Reinicia el contador de desplazamiento hacia arriba
+        }
+      }
+  
+      // Actualiza la posición del scroll para la siguiente comparación
+      lastScrollY = currentScrollY;
+    });
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
-  <script src="js/auth.js"></script>
 </body>
 
 </html>
