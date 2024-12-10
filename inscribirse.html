@@ -128,7 +128,7 @@
                   </div>
                   <div class="col-md-12 text-center">
   
-                    <h2 class="fs-1">Daniela Almaraz</h2>
+                    <h2 class="fs-1">Daniela Almaraz 👩🏻‍🏫</h2>
                     <p class="fs-3"><b>English Teacher</b></p>
   
   
@@ -171,7 +171,7 @@
             />
           </article>
         
-          <article class="col-12 col-lg-6" style="margin-top: 100px;">
+          <article class="col-12 col-lg-6 slide-up" style="margin-top: 100px;">
             <form id="form" onsubmit="enviarCorreo(event)">
               <div class="form-floating mb-2">
                   <input type="text" class="form-control" name="from_name" id="from_name" placeholder="Nombre" required>
@@ -274,10 +274,10 @@
       let accumulatedScrollUp = 0; // Para acumular los píxeles de desplazamiento hacia arriba
       let accumulatedScrollDown = 0; // Para acumular los píxeles de desplazamiento hacia abajo
       const navbarHeight = 110; // Ajusta este valor según la altura de tu navbar
-      const thresholdUp = 900; // Píxeles necesarios para mostrar la navbar al subir
+      const thresholdUp = 350; // Píxeles necesarios para mostrar la navbar al subir
       const thresholdDown = 200; // Píxeles necesarios para ocultar la navbar al bajar
     
-      navbar.style.transition = "top 0.4s ease-in-out";
+      navbar.style.transition = "top 0.5s ease-in-out";
     
       // Detectar desplazamiento con la rueda del ratón
       window.addEventListener("wheel", function (event) {
